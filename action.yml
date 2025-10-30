@@ -45,6 +45,7 @@ runs:
         token: ${{ inputs.github_token }}
         ref: refs/pull/${{ inputs.pull_number }}/head
         fetch-depth: ${{ inputs.fetch_depth }}
+        path: pr
 
     - name: Prepare Custom Context
       id: custom_context
